@@ -1,5 +1,4 @@
 import org.jsoup.Jsoup
-import play.api.libs.json.Writes
 import scala.io.Source
 import play.api.libs.json._
 import java.io.FileWriter
@@ -14,7 +13,10 @@ object WebScraping {
         val doc = Jsoup.connect(url).get()
         doc.select("p").text()
     }
-
+    def extractDate(url: String): String = {
+        val doc = Jsoup.connect(url).get()
+        doc.select("meta[name=datePublished]").attr("datePublished")
+    }
     /**
      * get a set of URL from a domain
      * @param domain
@@ -25,7 +27,6 @@ object WebScraping {
         val regex = """https://vnexpress\.net/[\w-]+\d+\.html""".r
         regex.findAllIn(response).toSet
     }
-
     /**
      * save a JSON object to json list
      * @param content
@@ -37,7 +38,8 @@ object WebScraping {
         for (link <- links) {
             val jsonObject = Map(
                 "url" -> link,
-                "content" -> extractText(link)
+                "content" -> extractText(link),
+                "date" -> extractDate(link)
             )
             jsonObjects += jsonObject
         }
