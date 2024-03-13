@@ -1,3 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(d0bb41e8-b6dd-484f-a91f-aef2dc3b6a51), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources and 1 Java source to D:\Information-Retrieval\target\scala-2.13\classes ...[0m
 [0m[[0m[31merror[0m] [0m[0mD:\Information-Retrieval\src\main\scala\WebScraping.scala:4:13: object json is not a member of package play[0m
 [0m[[0m[31merror[0m] [0m[0mimport play.json._[0m
 [0m[[0m[31merror[0m] [0m[0m            ^[0m
@@ -8,3 +12,6 @@
 [0m[[0m[31merror[0m] [0m[0m            links.map(link => Json.obj([0m
 [0m[[0m[31merror[0m] [0m[0m                              ^[0m
 [0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed 19:10:39, 13 thg 3, 2024[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

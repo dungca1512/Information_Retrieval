@@ -7,5 +7,6 @@ lazy val root = project
   .settings(
     name := "Information_Retrieval",
     libraryDependencies += "de.l3s.boilerpipe" % "boilerpipe" % "1.1.0",
-    libraryDependencies += "org.jsoup" % "jsoup" % "1.17.2"
-)
+    libraryDependencies += "org.jsoup" % "jsoup" % "1.17.2",
+    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.4"
+  )
