@@ -698,3 +698,773 @@ WARNING: Unmatched cancel notification for request id 18
 2024.03.06 14:52:56 INFO  Shut down connection with build server.
 2024.03.06 14:52:56 INFO  Shut down connection with build server.
 2024.03.06 14:52:56 INFO  Exiting server
+2024.03.13 10:14:40 INFO  Started: Metals version 1.2.2 in folders 'D:\Information-Retrieval' for client Visual Studio Code 1.87.0.
+10:14:41.614 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+10:14:41.614 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+10:14:41.614 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Admin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+10:14:41.614 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+10:14:41.630 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:14:41.630 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+10:14:41.630 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+10:14:41.630 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+10:14:41.630 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+10:14:41.752 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:D:\Information-Retrieval\.metals\metals (H2 2.2)
+10:14:41.752 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+10:14:41.752 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+10:14:41.752 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+10:14:41.752 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+10:14:41.752 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+10:14:41.752 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+10:14:41.752 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:14:41.760 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+10:14:41.760 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:14:41.776 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:14:41.798 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.030s)
+10:14:41.798 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+10:14:41.803 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+10:14:41.811 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+10:14:41.820 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 25 of 100M
+thg 3 13, 2024 10:14:42 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+thg 3 13, 2024 10:14:42 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2024.03.13 10:14:42 WARN  no build target for: D:\Information-Retrieval\build.sbt
+2024.03.13 10:14:42 INFO  Attempting to connect to the build server...
+2024.03.13 10:14:42 INFO  Detected non existing java path in C:\Users\Admin\.bloop\bloop.json file
+2024.03.13 10:14:42 INFO  Replacing it with java home at C:\Program Files\Java\jdk-11
+2024.03.13 10:14:44 INFO  running 'C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals7191949452058906204\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.13 10:14:51 INFO  [info] welcome to sbt 1.9.9 (Oracle Corporation Java 11.0.21)
+2024.03.13 10:14:52 INFO  [info] loading settings for project information-retrieval-build-build from metals.sbt ...
+2024.03.13 10:14:53 ERROR Starting the bsp launcher for bloop...
+2024.03.13 10:14:53 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 16299'...
+2024.03.13 10:14:53 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:14:53 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:14:53 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:14:53 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:14:53 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:14:53 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:14:53 ERROR error: The command bsp --protocol tcp --port 16299 returned with an error
+2024.03.13 10:14:53 ERROR > No server running at 127.0.0.1:8212, let's fire one...
+2024.03.13 10:14:53 ERROR > Resolving ch.epfl.scala:bloop-frontend_2.12:1.5.15...
+2024.03.13 10:14:53 ERROR > Starting bloop server at 127.0.0.1:8212...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > Attempting a connection to the server...
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.13\scala-library-2.13.13.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.13\scala-compiler-2.13.13.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.13\scala-reflect-2.13.13.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.13\scala-library-2.13.13.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.13\scala-compiler-2.13.13.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.13\scala-reflect-2.13.13.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\jline\jline\3.24.1\jline-3.24.1.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\jline\jline\3.24.1\jline-3.24.1.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar doesn't exist!
+2024.03.13 10:14:53 ERROR > [0m[31m[E][0m Failed to load project from d:\Information-Retrieval\.bloop\root-test.json
+2024.03.13 10:14:53 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2024.03.13 10:14:53 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:92)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:119)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:502)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.13 10:14:54 INFO  [info] loading project definition from D:\Information-Retrieval\project\project
+2024.03.13 10:14:56 INFO  [info] loading settings for project information-retrieval-build from metals.sbt ...
+2024.03.13 10:14:56 INFO  [info] loading project definition from D:\Information-Retrieval\project
+2024.03.13 10:15:00 INFO  [success] Generated .bloop\information-retrieval-build.json
+2024.03.13 10:15:00 INFO  [success] Total time: 4 s, completed 10:15:00, 13 thg 3, 2024
+2024.03.13 10:15:00 INFO  [error] [D:\Information-Retrieval\build.sbt]:10: ')' expected but string literal found.
+2024.03.13 10:15:00 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+2024.03.13 10:15:00 INFO  time: ran 'sbt bloopInstall' in 15s
+2024.03.13 10:15:00 ERROR sbt command failed: C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals7191949452058906204\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.03.13 10:15:00 INFO  Attempting to connect to the build server...
+2024.03.13 10:15:00 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:15:00 ERROR Starting the bsp launcher for bloop...
+2024.03.13 10:15:00 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 44447'...
+2024.03.13 10:15:00 ERROR Waiting for the bsp connection to come up...
+2024.03.13 10:15:00 ERROR error: The command bsp --protocol tcp --port 44447 returned with an error
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.13\scala-library-2.13.13.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.13\scala-library-2.13.13.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.13\scala-compiler-2.13.13.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.13\scala-compiler-2.13.13.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.13\scala-reflect-2.13.13.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.13\scala-reflect-2.13.13.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\jline\jline\3.24.1\jline-3.24.1.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\org\jline\jline\3.24.1\jline-3.24.1.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[33m[W][0m Scala instance jar d:\home\dungca\.cache\coursier\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar doesn't exist!
+2024.03.13 10:15:00 ERROR > [0m[31m[E][0m Failed to load project from d:\Information-Retrieval\.bloop\root-test.json
+2024.03.13 10:15:00 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2024.03.13 10:15:00 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:92)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:119)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:502)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.13 10:15:08 INFO  no build target found for D:\Information-Retrieval\build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.13 10:15:13 INFO  time: code lens generation in 19s
+2024.03.13 10:15:13 INFO  time: code lens generation in 19s
+2024.03.13 10:15:13 INFO  time: code lens generation in 19s
+2024.03.13 10:15:13 INFO  time: code lens generation in 19s
+2024.03.13 10:15:13 INFO  time: code lens generation in 19s
+2024.03.13 10:15:44 WARN  no build target for: D:\Information-Retrieval\build.sbt
+2024.03.13 10:15:44 INFO  skipping build import with status 'Dismissed'
+2024.03.13 10:15:46 WARN  no build target for: D:\Information-Retrieval\build.sbt
+2024.03.13 10:15:46 INFO  skipping build import with status 'Dismissed'
+2024.03.13 10:16:37 WARN  no build target for: D:\Information-Retrieval\build.sbt
+2024.03.13 10:16:37 INFO  skipping build import with status 'Dismissed'
+2024.03.13 10:16:44 WARN  no build target for: D:\Information-Retrieval\build.sbt
+2024.03.13 10:16:46 INFO  running 'C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals17612868075522712183\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.13 10:16:48 INFO  [info] welcome to sbt 1.9.9 (Oracle Corporation Java 11.0.21)
+2024.03.13 10:16:49 INFO  [info] loading settings for project information-retrieval-build-build from metals.sbt ...
+2024.03.13 10:16:50 INFO  [info] loading project definition from D:\Information-Retrieval\project\project
+2024.03.13 10:16:52 INFO  [info] loading settings for project information-retrieval-build from metals.sbt ...
+2024.03.13 10:16:52 INFO  [info] loading project definition from D:\Information-Retrieval\project
+2024.03.13 10:16:55 INFO  [success] Generated .bloop\information-retrieval-build.json
+2024.03.13 10:16:55 INFO  [success] Total time: 3 s, completed 10:16:55, 13 thg 3, 2024
+2024.03.13 10:16:59 INFO  [info] loading settings for project root from build.sbt ...
+2024.03.13 10:16:59 INFO  [info] set current project to Information_Retrieval (in build file:/D:/Information-Retrieval/)
+2024.03.13 10:17:23 INFO  [success] Generated .bloop\root.json
+2024.03.13 10:17:23 INFO  [success] Generated .bloop\root-test.json
+2024.03.13 10:17:23 INFO  [success] Total time: 24 s, completed 10:17:23, 13 thg 3, 2024
+2024.03.13 10:17:23 INFO  time: ran 'sbt bloopInstall' in 37s
+2024.03.13 10:17:23 INFO  Attempting to connect to the build server...
+2024.03.13 10:17:23 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:17:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:17:23 INFO  Attempting to connect to the build server...
+2024.03.13 10:17:23 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:17:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:17:24 INFO  time: Connected to build server in 1.12s
+2024.03.13 10:17:24 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 10:17:24 INFO  time: Imported build in 0.39s
+2024.03.13 10:17:30 INFO  compiling root (3 scala sources and 1 java source)
+2024.03.13 10:17:39 INFO  time: indexed workspace in 14s
+2024.03.13 10:17:42 WARN  2 deprecations (since 2.13.0); re-run with -deprecation for details
+2024.03.13 10:17:45 INFO  time: compiled root in 14s
+2024.03.13 10:17:52 INFO  time: code lens generation in 5.18s
+thg 3 13, 2024 10:17:52 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_(information-retrieval-build)_10-17-52-480.md
+2024.03.13 10:17:52 INFO  time: code lens generation in 6.89s
+2024.03.13 10:17:52 INFO  time: code lens generation in 3.06s
+2024.03.13 10:17:52 INFO  time: code lens generation in 4.19s
+thg 3 13, 2024 10:17:53 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_(information-retrieval-build)_10-17-53-738.md
+thg 3 13, 2024 10:17:56 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_(information-retrieval-build)_10-17-56-220.md
+thg 3 13, 2024 10:17:56 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_(information-retrieval-build)_10-17-56-882.md
+2024.03.13 10:18:01 INFO  running 'C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals1635965975559856957\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.13 10:18:03 INFO  [info] welcome to sbt 1.9.9 (Oracle Corporation Java 11.0.21)
+2024.03.13 10:18:05 INFO  [info] loading settings for project information-retrieval-build-build from metals.sbt ...
+2024.03.13 10:18:06 INFO  [info] loading project definition from D:\Information-Retrieval\project\project
+2024.03.13 10:18:07 INFO  [info] loading settings for project information-retrieval-build from metals.sbt ...
+2024.03.13 10:18:07 INFO  [info] loading project definition from D:\Information-Retrieval\project
+2024.03.13 10:18:12 INFO  [success] Generated .bloop\information-retrieval-build.json
+2024.03.13 10:18:12 INFO  [success] Total time: 5 s, completed 10:18:12, 13 thg 3, 2024
+2024.03.13 10:18:16 INFO  [info] loading settings for project root from build.sbt ...
+2024.03.13 10:18:16 INFO  [info] set current project to Information_Retrieval (in build file:/D:/Information-Retrieval/)
+2024.03.13 10:18:20 INFO  [warn] 
+2024.03.13 10:18:20 INFO  [warn] 	Note: Unresolved dependencies path:
+2024.03.13 10:18:20 INFO  [error] Couldn't run bloopGenerate. The issue could be caused by failing to compile the project.
+2024.03.13 10:18:20 INFO  [warn] Removed stale D:\Information-Retrieval\.bloop\root-test.json
+2024.03.13 10:18:20 INFO  [warn] Removed stale D:\Information-Retrieval\.bloop\root.json
+2024.03.13 10:18:20 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading org.scala-lang.modules:scala-parser-combinators_2.13:1.0.2
+2024.03.13 10:18:20 INFO  [error]   Not found
+2024.03.13 10:18:20 INFO  [error]   Not found
+2024.03.13 10:18:20 INFO  [error]   not found: C:\Users\Admin\.ivy2\localorg.scala-lang.modules\scala-parser-combinators_2.13\1.0.2\ivys\ivy.xml
+2024.03.13 10:18:20 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.0.2/scala-parser-combinators_2.13-1.0.2.pom
+2024.03.13 10:18:20 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:344)
+2024.03.13 10:18:20 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:313)
+2024.03.13 10:18:20 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+2024.03.13 10:18:20 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:313)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:60)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:134)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:74)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:147)
+2024.03.13 10:18:20 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:147)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:128)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:220)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:161)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3801)
+2024.03.13 10:18:20 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.Execute.work(Execute.scala:292)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+2024.03.13 10:18:20 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
+2024.03.13 10:18:20 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2024.03.13 10:18:20 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2024.03.13 10:18:20 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2024.03.13 10:18:20 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+2024.03.13 10:18:20 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2024.03.13 10:18:20 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:834)
+2024.03.13 10:18:20 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading org.scala-lang.modules:scala-parser-combinators_2.13:1.0.2
+2024.03.13 10:18:20 INFO  [error]   Not found
+2024.03.13 10:18:20 INFO  [error]   Not found
+2024.03.13 10:18:20 INFO  [error]   not found: C:\Users\Admin\.ivy2\localorg.scala-lang.modules\scala-parser-combinators_2.13\1.0.2\ivys\ivy.xml
+2024.03.13 10:18:20 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.0.2/scala-parser-combinators_2.13-1.0.2.pom
+2024.03.13 10:18:20 INFO  [error] Total time: 3 s, completed 10:18:20, 13 thg 3, 2024
+2024.03.13 10:18:20 INFO  time: ran 'sbt bloopInstall' in 19s
+2024.03.13 10:18:20 ERROR sbt command failed: C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals1635965975559856957\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.03.13 10:18:20 INFO  Disconnecting from Bloop session...
+2024.03.13 10:18:20 INFO  Shut down connection with build server.
+2024.03.13 10:18:20 INFO  Shut down connection with build server.
+2024.03.13 10:18:20 INFO  Attempting to connect to the build server...
+2024.03.13 10:18:20 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:18:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:18:20 INFO  Attempting to connect to the build server...
+2024.03.13 10:18:20 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:18:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:18:20 INFO  time: Connected to build server in 0.19s
+2024.03.13 10:18:20 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 10:18:22 INFO  time: indexed workspace in 1.72s
+2024.03.13 10:18:22 WARN  no build target for: D:\Information-Retrieval\src\main\scala\IndexSearch.scala
+2024.03.13 10:18:22 WARN  no build target for: D:\Information-Retrieval\src\main\scala\Main.scala
+2024.03.13 10:18:22 WARN  no build target for: D:\Information-Retrieval\src\main\scala\BooleanSearch.scala
+2024.03.13 10:18:25 INFO  skipping build import with status 'Installed'
+2024.03.13 10:18:26 INFO  time: code lens generation in 3.21s
+2024.03.13 10:18:39 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala.scala
+2024.03.13 10:18:55 ERROR Failed to tokenize input for semantic tokens for D:\Information-Retrieval\src\main\scala\WebScraping.scala
+scala.meta.tokenizers.TokenizeException: <input>:1: error: unclosed quoted identifier
+object `WebScraping.sca {
+       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:489)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.13 10:18:56 ERROR Failed to tokenize input for semantic tokens for D:\Information-Retrieval\src\main\scala\WebScraping.scala
+scala.meta.tokenizers.TokenizeException: <input>:1: error: unclosed quoted identifier
+object `WebScraping. {
+       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:489)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+thg 3 13, 2024 10:18:56 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-18-56-787.md
+2024.03.13 10:18:56 ERROR Failed to tokenize input for semantic tokens for D:\Information-Retrieval\src\main\scala\WebScraping.scala
+scala.meta.tokenizers.TokenizeException: <input>:1: error: unclosed quoted identifier
+object `WebScraping {
+       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:489)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.13 10:18:57 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+thg 3 13, 2024 10:18:57 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-18-57-384.md
+2024.03.13 10:18:57 ERROR Failed to tokenize input for semantic tokens for D:\Information-Retrieval\src\main\scala\WebScraping.scala
+scala.meta.tokenizers.TokenizeException: <input>:1: error: unclosed quoted identifier
+object `WebScraping {
+       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:489)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.13 10:18:58 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:19:00 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:19:10 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:19:11 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+thg 3 13, 2024 10:19:11 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-11-678.md
+thg 3 13, 2024 10:19:13 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-13-645.md
+thg 3 13, 2024 10:19:14 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-14-146.md
+thg 3 13, 2024 10:19:14 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-14-839.md
+thg 3 13, 2024 10:19:15 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 320
+2024.03.13 10:19:16 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+thg 3 13, 2024 10:19:16 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-16-353.md
+thg 3 13, 2024 10:19:16 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-16-937.md
+2024.03.13 10:19:18 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:19:20 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+thg 3 13, 2024 10:19:29 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-29-007.md
+2024.03.13 10:19:29 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+thg 3 13, 2024 10:19:29 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_10-19-29-981.md
+2024.03.13 10:19:31 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:19:53 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:20:35 INFO  Shutting down server
+2024.03.13 10:20:35 INFO  shutting down Metals
+2024.03.13 10:20:35 INFO  Shut down connection with build server.
+2024.03.13 10:20:35 INFO  Shut down connection with build server.
+2024.03.13 10:20:35 INFO  Exiting server
+2024.03.13 10:52:35 INFO  Started: Metals version 1.2.2 in folders 'D:\Information-Retrieval' for client Visual Studio Code 1.87.0.
+10:52:36.948 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+10:52:36.951 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+10:52:36.951 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+10:52:36.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+10:52:36.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+10:52:36.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+10:52:36.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+10:52:36.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+10:52:36.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Admin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+10:52:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+10:52:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+10:52:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+10:52:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+10:52:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+10:52:36.958 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+10:52:36.962 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:52:36.962 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+10:52:36.967 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+10:52:36.967 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+10:52:36.967 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+10:52:37.101 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:D:\Information-Retrieval\.metals\metals (H2 2.2)
+10:52:37.101 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+10:52:37.101 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+10:52:37.101 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+10:52:37.101 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+10:52:37.108 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+10:52:37.108 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+10:52:37.108 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:52:37.118 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+10:52:37.128 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:52:37.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:52:37.158 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.032s)
+10:52:37.160 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+10:52:37.167 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+10:52:37.167 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+10:52:37.188 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 26 of 100M
+2024.03.13 10:52:38 INFO  Attempting to connect to the build server...
+2024.03.13 10:52:38 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:52:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:52:38 INFO  Attempting to connect to the build server...
+2024.03.13 10:52:38 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:52:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:52:39 INFO  time: Connected to build server in 1.3s
+2024.03.13 10:52:39 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 10:52:39 INFO  time: Imported build in 0.4s
+2024.03.13 10:52:40 INFO  running 'C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals5185936755566348007\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.13 10:52:47 INFO  sbt thinks that server is already booting because of this exception:
+2024.03.13 10:52:47 ERROR sbt.internal.ServerAlreadyBootingException: java.io.IOException: Could not create lock for \\.\pipe\sbt-load8033606160310990185_lock, error 5
+2024.03.13 10:52:47 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:357)
+2024.03.13 10:52:47 ERROR 	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:296)
+2024.03.13 10:52:47 ERROR 	at sbt.xMain$.getSocketOrExit(Main.scala:152)
+2024.03.13 10:52:47 ERROR 	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:78)
+2024.03.13 10:52:47 ERROR 	at sbt.xMain$.bootServerSocket$1(Main.scala:78)
+2024.03.13 10:52:47 ERROR 	at sbt.xMain$.withStreams$1(Main.scala:86)
+2024.03.13 10:52:47 ERROR 	at sbt.xMain$.run(Main.scala:123)
+2024.03.13 10:52:47 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024.03.13 10:52:47 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2024.03.13 10:52:47 ERROR 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2024.03.13 10:52:47 ERROR 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2024.03.13 10:52:47 ERROR 	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+2024.03.13 10:52:47 ERROR 	at sbt.xMain.run(Main.scala:47)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.run(Launch.scala:149)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.launch(Launch.scala:159)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:44)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:21)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Boot$.runImpl(Boot.scala:78)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Boot$.run(Boot.scala:73)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Boot$.main(Boot.scala:21)
+2024.03.13 10:52:47 ERROR 	at xsbt.boot.Boot.main(Boot.scala)
+2024.03.13 10:52:47 ERROR Caused by: java.io.IOException: Could not create lock for \\.\pipe\sbt-load8033606160310990185_lock, error 5
+2024.03.13 10:52:47 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:129)
+2024.03.13 10:52:47 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:48)
+2024.03.13 10:52:47 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:351)
+2024.03.13 10:52:47 ERROR 	... 23 more
+2024.03.13 10:52:47 INFO  time: ran 'sbt bloopInstall' in 7.05s
+2024.03.13 10:52:47 ERROR sbt command failed: C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals5185936755566348007\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.03.13 10:52:47 INFO  Disconnecting from Bloop session...
+2024.03.13 10:52:47 INFO  Shut down connection with build server.
+2024.03.13 10:52:47 INFO  Shut down connection with build server.
+2024.03.13 10:52:47 INFO  Attempting to connect to the build server...
+2024.03.13 10:52:47 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:52:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:52:47 INFO  Attempting to connect to the build server...
+2024.03.13 10:52:47 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:52:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:52:47 INFO  time: Connected to build server in 0.19s
+2024.03.13 10:52:47 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 10:52:48 INFO  time: Imported build in 0.11s
+2024.03.13 10:52:53 INFO  no build target found for D:\Information-Retrieval\build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.13 10:52:58 INFO  time: indexed workspace in 4.27s
+2024.03.13 10:52:58 INFO  time: indexed workspace in 4.26s
+2024.03.13 10:52:58 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:52:58 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+thg 3 13, 2024 10:53:07 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_(information-retrieval-build)_10-53-07-768.md
+2024.03.13 10:53:07 INFO  time: code lens generation in 1.35s
+2024.03.13 10:53:07 INFO  time: code lens generation in 1.88s
+2024.03.13 10:53:07 INFO  time: code lens generation in 1.88s
+2024.03.13 10:53:07 INFO  time: code lens generation in 1.89s
+thg 3 13, 2024 10:54:10 SA scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Information-Retrieval\.metals\.reports\metals-full\2024-03-13\r_compiler-error_(information-retrieval-build)_10-54-10-642.md
+2024.03.13 10:54:10 INFO  time: code lens generation in 2.87s
+2024.03.13 10:54:11 INFO  time: code lens generation in 1.92s
+2024.03.13 10:54:11 INFO  time: code lens generation in 2.56s
+thg 3 13, 2024 10:54:12 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
+thg 3 13, 2024 10:54:12 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 82
+2024.03.13 10:54:12 INFO  running 'C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals4069038318549065288\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.13 10:54:15 INFO  sbt thinks that server is already booting because of this exception:
+2024.03.13 10:54:15 ERROR sbt.internal.ServerAlreadyBootingException: java.io.IOException: Could not create lock for \\.\pipe\sbt-load8033606160310990185_lock, error 5
+2024.03.13 10:54:15 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:357)
+2024.03.13 10:54:15 ERROR 	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:296)
+2024.03.13 10:54:15 ERROR 	at sbt.xMain$.getSocketOrExit(Main.scala:152)
+2024.03.13 10:54:15 ERROR 	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:78)
+2024.03.13 10:54:15 ERROR 	at sbt.xMain$.bootServerSocket$1(Main.scala:78)
+2024.03.13 10:54:15 ERROR 	at sbt.xMain$.withStreams$1(Main.scala:86)
+2024.03.13 10:54:15 ERROR 	at sbt.xMain$.run(Main.scala:123)
+2024.03.13 10:54:15 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024.03.13 10:54:15 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2024.03.13 10:54:15 ERROR 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2024.03.13 10:54:15 ERROR 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2024.03.13 10:54:15 ERROR 	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+2024.03.13 10:54:15 ERROR 	at sbt.xMain.run(Main.scala:47)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.run(Launch.scala:149)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.launch(Launch.scala:159)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:44)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:21)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Boot$.runImpl(Boot.scala:78)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Boot$.run(Boot.scala:73)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Boot$.main(Boot.scala:21)
+2024.03.13 10:54:15 ERROR 	at xsbt.boot.Boot.main(Boot.scala)
+2024.03.13 10:54:15 ERROR Caused by: java.io.IOException: Could not create lock for \\.\pipe\sbt-load8033606160310990185_lock, error 5
+2024.03.13 10:54:15 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:129)
+2024.03.13 10:54:15 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:48)
+2024.03.13 10:54:15 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:351)
+2024.03.13 10:54:15 ERROR 	... 23 more
+2024.03.13 10:54:15 INFO  time: ran 'sbt bloopInstall' in 2.81s
+2024.03.13 10:54:15 ERROR sbt command failed: C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals4069038318549065288\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.03.13 10:54:15 INFO  Disconnecting from Bloop session...
+2024.03.13 10:54:15 INFO  Shut down connection with build server.
+2024.03.13 10:54:15 INFO  Shut down connection with build server.
+2024.03.13 10:54:15 INFO  Attempting to connect to the build server...
+2024.03.13 10:54:15 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:54:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:54:15 INFO  Attempting to connect to the build server...
+2024.03.13 10:54:15 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:54:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:54:15 INFO  time: Connected to build server in 0.19s
+2024.03.13 10:54:15 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 10:54:15 INFO  time: Imported build in 0.11s
+2024.03.13 10:54:20 INFO  time: indexed workspace in 4.45s
+2024.03.13 10:54:20 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:54:20 WARN  no build target for: D:\Information-Retrieval\src\main\scala\Main.scala
+2024.03.13 10:54:26 INFO  skipping build import with status 'Installed'
+2024.03.13 10:54:28 INFO  Shutting down server
+2024.03.13 10:54:28 INFO  shutting down Metals
+2024.03.13 10:54:28 INFO  Shut down connection with build server.
+2024.03.13 10:54:28 INFO  Shut down connection with build server.
+2024.03.13 10:54:28 INFO  time: code lens generation in 1.69s
+2024.03.13 10:54:28 INFO  time: code lens generation in 7.6s
+2024.03.13 10:54:28 INFO  Exiting server
+2024.03.13 10:57:22 INFO  Started: Metals version 1.2.2 in folders 'D:\Information-Retrieval' for client Visual Studio Code 1.87.0.
+10:57:23.760 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+10:57:23.763 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+10:57:23.763 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+10:57:23.765 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+10:57:23.765 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+10:57:23.766 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+10:57:23.766 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+10:57:23.766 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+10:57:23.766 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Admin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+10:57:23.773 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+10:57:23.773 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+10:57:23.773 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+10:57:23.773 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+10:57:23.773 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+10:57:23.773 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+10:57:23.778 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:57:23.779 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+10:57:23.780 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+10:57:23.780 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+10:57:23.780 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+10:57:23.942 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:D:\Information-Retrieval\.metals\metals (H2 2.2)
+10:57:23.942 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+10:57:23.942 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+10:57:23.943 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+10:57:23.945 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+10:57:23.949 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+10:57:23.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+10:57:23.951 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:57:23.962 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+10:57:23.966 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:57:23.981 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:57:23.981 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:57:23.981 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:57:23.981 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:57:23.981 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:57:23.982 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:57:23.982 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:57:23.982 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:57:23.982 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:57:23.982 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:57:24.002 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.039s)
+10:57:24.006 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+10:57:24.014 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+10:57:24.019 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+10:57:24.036 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 28 of 100M
+2024.03.13 10:57:25 INFO  skipping build import with status 'Installed'
+2024.03.13 10:57:25 INFO  Attempting to connect to the build server...
+2024.03.13 10:57:25 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:57:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:57:25 INFO  Attempting to connect to the build server...
+2024.03.13 10:57:25 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 10:57:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 10:57:26 INFO  time: Connected to build server in 1.05s
+2024.03.13 10:57:26 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 10:57:27 INFO  time: Imported build in 0.58s
+2024.03.13 10:57:42 INFO  no build target found for D:\Information-Retrieval\src\main\scala\WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.13 10:57:50 INFO  time: indexed workspace in 7.91s
+2024.03.13 10:57:51 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 10:58:06 INFO  time: code lens generation in 3.15s
+2024.03.13 10:58:06 INFO  time: code lens generation in 3.15s
+2024.03.13 10:58:06 INFO  time: code lens generation in 3.12s
+2024.03.13 10:58:06 INFO  time: code lens generation in 3.15s
+thg 3 13, 2024 11:12:57 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+2024.03.13 11:12:58 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 11:13:24 INFO  Shutting down server
+2024.03.13 11:13:24 INFO  shutting down Metals
+2024.03.13 11:13:24 INFO  Shut down connection with build server.
+2024.03.13 11:13:24 INFO  Shut down connection with build server.
+2024.03.13 11:13:24 INFO  Exiting server
+2024.03.13 11:18:19 INFO  Started: Metals version 1.2.2 in folders 'D:\Information-Retrieval' for client Visual Studio Code 1.87.2.
+11:18:20.433 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+11:18:20.433 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+11:18:20.441 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+11:18:20.441 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+11:18:20.441 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+11:18:20.441 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+11:18:20.441 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+11:18:20.441 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+11:18:20.441 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Admin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+11:18:20.452 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:18:20.461 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+11:18:20.461 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+11:18:20.461 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+11:18:20.461 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+11:18:20.602 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:D:\Information-Retrieval\.metals\metals (H2 2.2)
+11:18:20.602 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+11:18:20.602 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+11:18:20.602 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+11:18:20.602 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+11:18:20.611 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+11:18:20.611 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+11:18:20.611 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:18:20.628 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+11:18:20.628 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:18:20.643 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+11:18:20.659 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.031s)
+11:18:20.659 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+11:18:20.659 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+11:18:20.674 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+11:18:20.695 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 100M
+2024.03.13 11:18:21 INFO  skipping build import with status 'Installed'
+2024.03.13 11:18:21 INFO  Attempting to connect to the build server...
+2024.03.13 11:18:21 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 11:18:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 11:18:21 INFO  Attempting to connect to the build server...
+2024.03.13 11:18:21 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.13 11:18:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.13 11:18:21 INFO  time: Connected to build server in 0.9s
+2024.03.13 11:18:21 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.13 11:18:22 INFO  time: Imported build in 0.24s
+2024.03.13 11:18:30 INFO  no build target found for D:\Information-Retrieval\src\main\scala\WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.1
+thg 3 13, 2024 11:18:31 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2024.03.13 11:18:41 INFO  time: indexed workspace in 10s
+2024.03.13 11:18:41 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 11:18:44 INFO  no build target found for D:\Information-Retrieval\src\main\scala\WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.1
+thg 3 13, 2024 11:18:44 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+thg 3 13, 2024 11:18:44 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+thg 3 13, 2024 11:18:44 SA org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2024.03.13 11:18:44 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.13 11:18:53 INFO  time: code lens generation in 8.5s
+2024.03.13 11:18:53 INFO  time: code lens generation in 8.5s
+2024.03.13 11:18:53 INFO  time: code lens generation in 8.5s
+2024.03.13 11:34:29 INFO  Shutting down server
+2024.03.13 11:34:29 INFO  shutting down Metals
+2024.03.13 11:34:29 INFO  Shut down connection with build server.
+2024.03.13 11:34:29 INFO  Shut down connection with build server.
+2024.03.13 11:34:29 INFO  Exiting server

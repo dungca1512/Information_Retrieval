@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(runun, Some(8df948c7-0a7e-46b4-bcd6-0eb0ebb78b29), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: runun[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: runun[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: runun (similar: run, runner, runMain)[0m
+[0m[[0m[31merror[0m] [0m[0mrunun[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

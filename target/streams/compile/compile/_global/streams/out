@@ -1,2 +1,6 @@
-[0m[[0m[33mwarn[0m] [0m[0m2 deprecations (since 2.13.0); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Information-Retrieval\src\main\scala\WebScraping.scala:7:12: value charset is not a member of org.jsoup.Connection[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean parser?[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value charset`?[0m
+[0m[[0m[31merror[0m] [0m[0m          .charset("UTF-8")[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

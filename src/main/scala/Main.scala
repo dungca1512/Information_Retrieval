@@ -1,4 +1,3 @@
-import scala.io.Source
 import java.util.Scanner
 
 object Main {

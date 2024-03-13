@@ -62,7 +62,7 @@ object BooleanSearch {
    */
   def searchNot(term: String): Set[String] = {
     val termDocs = search(term)
-    val allDocs = index.values.flatMap(identity).toSet
+    val allDocs = index.values.flatten.toSet
     allDocs.diff(termDocs).toList.sorted.toSet
   }
 
