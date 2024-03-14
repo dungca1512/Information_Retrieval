@@ -1,3 +1,4 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/D:/Information-Retrieval/"), "root")...
-[debug] Done updating ProjectRef(uri("file:/D:/Information-Retrieval/"), "root")
+[warn] play-json_2.13-2.10.4-sources.jar no longer exists at C:\Users\Admin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\play\play-json_2.13\2.10.4\play-json_2.13-2.10.4-sources.jar
+[debug] not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/D:/Information_Retrieval/"), "root")...
+[debug] Done updating ProjectRef(uri("file:/D:/Information_Retrieval/"), "root")

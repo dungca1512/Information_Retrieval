@@ -13,6 +13,12 @@ object WebScraping {
         val doc = Jsoup.connect(url).get()
         doc.select("p").text()
     }
+
+    /**
+     * extract date from URL of a article
+     * @param url
+     * @return date
+     */
     def extractDate(url: String): String = {
         val doc = Jsoup.connect(url).get()
         doc.select("meta[name=datePublished]").attr("datePublished")
