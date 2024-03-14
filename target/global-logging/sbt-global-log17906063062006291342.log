@@ -1,0 +1,11 @@
+[debug] > Exec(all {file:/D:/Information_Retrieval/}root/products {file:/D:/Information_Retrieval/}root/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources and 1 Java source to D:\Information_Retrieval\target\scala-2.13\classes ...
+[warn] 2 deprecations (since 2.13.0); re-run with -deprecation for details
+[warn] one warning found
+[info] done compiling
+[success] Total time: 10 s, completed 10:42:45, 14 thg 3, 2024
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

@@ -1,8 +1,8 @@
 import org.jsoup.Jsoup
-import scala.io.Source
 import play.api.libs.json._
-import java.io.FileWriter
-import java.io.File
+
+import java.io.{File, FileWriter}
+import scala.io.Source
 object WebScraping {
     /**
      * extract text from URL of a article
@@ -20,8 +20,25 @@ object WebScraping {
      * @return date
      */
     def extractDate(url: String): String = {
-        val doc = Jsoup.connect(url).get()
-        doc.select("meta[name=datePublished]").attr("datePublished")
+        val html = Jsoup.connect(url).get().html()
+        val pattern = """<script type="application/ld\+json">(.*?)</script>""".r
+        val jsonMatches = pattern.findAllMatchIn(html).map(_.group(1))
+        val datePublishedOption = jsonMatches
+          .map(json => {
+              try {
+                  val datePublishedPattern = """"datePublished"\s*:\s*"(.*?)"""".r
+                  val datePublished = datePublishedPattern.findFirstMatchIn(json).map(_.group(1))
+                  datePublished
+              } catch {
+                  case _: Throwable => None
+              }
+          })
+          .find(_.isDefined)
+          .flatten
+        datePublishedOption match {
+            case Some(datePublished) => datePublished
+            case None => ""
+        }
     }
     /**
      * get a set of URL from a domain
@@ -55,6 +72,5 @@ object WebScraping {
         fileWriter.write(json.toString())
         fileWriter.close()
     }
-
 }
 

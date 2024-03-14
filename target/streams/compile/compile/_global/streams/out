@@ -1,10 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Information-Retrieval\src\main\scala\WebScraping.scala:4:13: object json is not a member of package play[0m
-[0m[[0m[31merror[0m] [0m[0mimport play.json._[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Information-Retrieval\src\main\scala\WebScraping.scala:23:20: not found: value Json[0m
-[0m[[0m[31merror[0m] [0m[0m        val json = Json.arr([0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Information-Retrieval\src\main\scala\WebScraping.scala:24:31: not found: value Json[0m
-[0m[[0m[31merror[0m] [0m[0m            links.map(link => Json.obj([0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[debug] Acquiring lock on file D:\Information_Retrieval\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock ...
+[debug] Releasing lock on file D:\Information_Retrieval\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock.

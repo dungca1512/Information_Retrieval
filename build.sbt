@@ -8,5 +8,8 @@ lazy val root = project
     name := "Information_Retrieval",
     libraryDependencies += "de.l3s.boilerpipe" % "boilerpipe" % "1.1.0",
     libraryDependencies += "org.jsoup" % "jsoup" % "1.17.2",
-    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.4"
+    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.4",
+    libraryDependencies += "org.json4s" %% "json4s-native" % "4.1.0-M4",
+    libraryDependencies += "io.spray" %% "spray-json" % "1.3.6",
+    libraryDependencies += "org.json4s" %% "json4s-native" % "4.0.7"
   )
