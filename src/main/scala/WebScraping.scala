@@ -57,16 +57,13 @@ object WebScraping {
      * @return a json list
      */
     def saveJson(links: Set[String]): Unit = {
-        val jsonObjects = List.newBuilder[Map[String, String]]
-        for (link <- links) {
-            val jsonObject = Map(
-                "url" -> link,
-                "content" -> extractText(link),
-                "date" -> extractDate(link)
-            )
-            jsonObjects += jsonObject
-        }
-        val json = Json.toJson(jsonObjects.result())
+        val jsonObjects = links.map(link => Map(
+            "url" -> link,
+            "content" -> extractText(link),
+            "date" -> extractDate(link)
+        )).toList // Convert directly to a List
+
+        val json = Json.toJson(jsonObjects)
         val file = new File("json/data.json")
         val fileWriter = new FileWriter(file)
         fileWriter.write(json.toString())

@@ -1468,3 +1468,124 @@ WARNING: Unmatched cancel notification for request id 3
 2024.03.13 11:34:29 INFO  Shut down connection with build server.
 2024.03.13 11:34:29 INFO  Shut down connection with build server.
 2024.03.13 11:34:29 INFO  Exiting server
+2024.03.14 18:23:35 INFO  Started: Metals version 1.2.2 in folders 'D:\Information-Retrieval' for client Visual Studio Code 1.87.2.
+18:23:37.004 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+18:23:37.004 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+18:23:37.004 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+18:23:37.019 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+18:23:37.019 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+18:23:37.019 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+18:23:37.019 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+18:23:37.019 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+18:23:37.019 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Admin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+18:23:37.023 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+18:23:37.127 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:D:\Information-Retrieval\.metals\metals (H2 2.2)
+18:23:37.127 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+18:23:37.127 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+18:23:37.128 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+18:23:37.128 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+18:23:37.132 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+18:23:37.133 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+18:23:37.133 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:23:37.140 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+18:23:37.144 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:23:37.153 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+18:23:37.153 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+18:23:37.153 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+18:23:37.153 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:23:37.153 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+18:23:37.154 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+18:23:37.154 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+18:23:37.154 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+18:23:37.154 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+18:23:37.154 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+18:23:37.159 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.026s)
+18:23:37.159 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+18:23:37.175 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+18:23:37.175 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+18:23:37.190 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 28 of 100M
+2024.03.14 18:23:38 INFO  Attempting to connect to the build server...
+2024.03.14 18:23:38 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.14 18:23:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 18:23:45 INFO  Attempting to connect to the build server...
+2024.03.14 18:23:45 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.14 18:23:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 18:23:45 INFO  time: Connected to build server in 8.07s
+2024.03.14 18:23:45 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.14 18:23:47 INFO  time: Imported build in 0.5s
+2024.03.14 18:23:52 INFO  no build target found for D:\Information-Retrieval\src\main\scala\WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.14 18:23:55 INFO  time: indexed workspace in 2.74s
+2024.03.14 18:23:55 INFO  {
+  "jsonrpc": "2.0",
+  "id": "8",
+  "error": {
+    "code": -32600,
+    "message": "No project associated with Uri(file:/D:/Information-Retrieval/project/?id\u003dinformation-retrieval-build)"
+  }
+}
+2024.03.14 18:23:55 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.14 18:26:00 INFO  time: code lens generation in 1.05s
+2024.03.14 18:26:00 INFO  time: code lens generation in 1.01s
+2024.03.14 18:26:00 INFO  time: code lens generation in 1.01s
+2024.03.14 18:26:08 INFO  running 'C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals968482367024885698\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.14 18:26:10 ERROR sbt.internal.ServerAlreadyBootingException: java.io.IOException: Could not create lock for \\.\pipe\sbt-load8033606160310990185_lock, error 5
+2024.03.14 18:26:10 INFO  sbt thinks that server is already booting because of this exception:
+2024.03.14 18:26:10 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:357)
+2024.03.14 18:26:10 ERROR 	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:296)
+2024.03.14 18:26:10 ERROR 	at sbt.xMain$.getSocketOrExit(Main.scala:152)
+2024.03.14 18:26:10 ERROR 	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:78)
+2024.03.14 18:26:10 ERROR 	at sbt.xMain$.bootServerSocket$1(Main.scala:78)
+2024.03.14 18:26:10 ERROR 	at sbt.xMain$.withStreams$1(Main.scala:86)
+2024.03.14 18:26:10 ERROR 	at sbt.xMain$.run(Main.scala:123)
+2024.03.14 18:26:10 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2024.03.14 18:26:10 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2024.03.14 18:26:10 ERROR 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2024.03.14 18:26:10 ERROR 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2024.03.14 18:26:10 ERROR 	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+2024.03.14 18:26:10 ERROR 	at sbt.xMain.run(Main.scala:47)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.run(Launch.scala:149)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.launch(Launch.scala:159)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:44)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:21)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Boot$.runImpl(Boot.scala:78)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Boot$.run(Boot.scala:73)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Boot$.main(Boot.scala:21)
+2024.03.14 18:26:10 ERROR 	at xsbt.boot.Boot.main(Boot.scala)
+2024.03.14 18:26:10 ERROR Caused by: java.io.IOException: Could not create lock for \\.\pipe\sbt-load8033606160310990185_lock, error 5
+2024.03.14 18:26:10 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:129)
+2024.03.14 18:26:10 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:48)
+2024.03.14 18:26:10 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:351)
+2024.03.14 18:26:10 ERROR 	... 23 more
+2024.03.14 18:26:10 INFO  time: ran 'sbt bloopInstall' in 1.46s
+2024.03.14 18:26:10 ERROR sbt command failed: C:\Program Files\Java\jdk-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Admin\AppData\Local\Temp\metals968482367024885698\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.03.14 18:26:10 INFO  Disconnecting from Bloop session...
+2024.03.14 18:26:10 INFO  Shut down connection with build server.
+2024.03.14 18:26:10 INFO  Shut down connection with build server.
+2024.03.14 18:26:10 INFO  Attempting to connect to the build server...
+2024.03.14 18:26:10 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.14 18:26:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 18:26:10 INFO  Attempting to connect to the build server...
+2024.03.14 18:26:10 INFO  Bloop uses C:\Program Files\Java\jdk-11 defined at C:\Users\Admin\.bloop\bloop.json
+2024.03.14 18:26:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Information-Retrieval\project\.metals\bsp.trace.json or C:\Users\Admin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.03.14 18:26:10 INFO  time: Connected to build server in 0.12s
+2024.03.14 18:26:10 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.14 18:26:12 INFO  time: indexed workspace in 1.85s
+2024.03.14 18:26:12 WARN  no build target for: D:\Information-Retrieval\src\main\scala\WebScraping.scala
+2024.03.14 18:26:36 INFO  Shutting down server
+2024.03.14 18:26:36 INFO  shutting down Metals
+2024.03.14 18:26:36 INFO  Shut down connection with build server.
+2024.03.14 18:26:36 INFO  Shut down connection with build server.
+2024.03.14 18:26:36 INFO  Exiting server
