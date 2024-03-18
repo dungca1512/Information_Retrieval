@@ -1,4 +1,4 @@
-[debug] [information-retrieval-build] Classpath dependencies List()
-[debug] [information-retrieval-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'information-retrieval-build' to 'D:\Information-Retrieval\project\.bloop\information-retrieval-build.json'
-[success] Generated .bloop\information-retrieval-build.json
+[debug] [information_retrieval-build] Classpath dependencies List()
+[debug] [information_retrieval-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'information_retrieval-build' to 'D:\Information_Retrieval\project\.bloop\information_retrieval-build.json'
+[success] Generated .bloop\information_retrieval-build.json
