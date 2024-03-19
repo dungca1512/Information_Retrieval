@@ -1,7 +1,9 @@
 import org.jsoup.Jsoup
 import play.api.libs.json._
 
-import java.io.{File, FileWriter}
+import java.nio.ByteBuffer
+import java.nio.channels.FileChannel
+import java.nio.file.{Paths, StandardOpenOption}
 import scala.io.Source
 object WebScraping {
     /**
@@ -47,31 +49,48 @@ object WebScraping {
     private def getUrls(domain: String): Set[String] = {
         val urlSource = Source.fromURL(domain)
         val response = urlSource.mkString
-        val regex = """/[\w-]+\d+\.epi""".r
-        val links = regex.findAllIn(response).toSet
-        links.map(link => "https://baomoi.com" + link)
+        val regex = """https://vnexpress\.net/[\w-]+\d+\.html""".r
+        regex.findAllIn(response).toSet
     }
     /**
      * save a JSON object to json list
      * @param links
+     * @param path
      * @return a json list
      */
-    private def saveJson(links: Set[String]): Unit = {
+    private def saveJson(links: Set[String], path: String): Unit = {
         val jsonObjects = links.map(link => Map(
             "url" -> link,
             "content" -> extractText(link),
             "date" -> extractDate(link)
         )).toList
-        val json = Json.toJson(jsonObjects)
-        val file = new File("json/data.json")
-        val fileWriter = new FileWriter(file)
-        fileWriter.write(json.toString())
-        fileWriter.close()
+        val out = FileChannel.open(Paths.get(path), StandardOpenOption.APPEND, StandardOpenOption.CREATE)
+        val jsonStr = Json.prettyPrint(Json.toJson(jsonObjects))
+        out.write(ByteBuffer.wrap(jsonStr.getBytes))
+        out.close()
     }
     def main(args: Array[String]): Unit = {
-        val domain = "https://baomoi.com/cntt-vien-thong.epi"
-        val links = getUrls(domain)
-        saveJson(links)
+        val domains: Set[String] = Set("https://vnexpress.net/thoi-su",
+                                        "https://vnexpress.net/goc-nhin",
+                                        "https://vnexpress.net/the-gioi",
+                                        "https://vnexpress.net/podcast",
+                                        "https://vnexpress.net/kinh-doanh",
+                                        "https://vnexpress.net/bat-dong-san",
+                                        "https://vnexpress.net/khoa-hoc",
+                                        "https://vnexpress.net/giai-tri",
+                                        "https://vnexpress.net/the-thao",
+                                        "https://vnexpress.net/phap-luat",
+                                        "https://vnexpress.net/giao-duc",
+                                        "https://vnexpress.net/suc-khoe",
+                                        "https://vnexpress.net/doi-song",
+                                        "https://vnexpress.net/du-lich",
+                                        "https://vnexpress.net/so-hoa",
+                                        "https://vnexpress.net/oto-xe-may",
+                                        "https://vnexpress.net/y-kien",
+                                        "https://vnexpress.net/tam-su",
+                                        "https://vnexpress.net/thu-gian")
+        val path = "json/data.json"
+        domains.foreach(domain => saveJson(getUrls(domain), path))
     }
 }
 
