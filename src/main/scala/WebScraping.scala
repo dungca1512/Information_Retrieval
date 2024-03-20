@@ -25,17 +25,17 @@ object WebScraping {
         val pattern = """<script type="application/ld\+json">(.*?)</script>""".r
         val jsonMatches = pattern.findAllMatchIn(html).map(_.group(1))
         val datePublishedOption = jsonMatches
-          .map(json => {
-              try {
-                  val datePublishedPattern = """"datePublished"\s*:\s*"(.*?)"""".r
-                  val datePublished = datePublishedPattern.findFirstMatchIn(json).map(_.group(1))
-                  datePublished
-              } catch {
-                  case _: Throwable => None
-              }
-          })
-          .find(_.isDefined)
-          .flatten
+            .map(json => {
+                try {
+                    val datePublishedPattern = """"datePublished"\s*:\s*"(.*?)"""".r
+                    val datePublished = datePublishedPattern.findFirstMatchIn(json).map(_.group(1))
+                    datePublished
+                } catch {
+                    case _: Throwable => None
+                }
+            })
+            .find(_.isDefined)
+            .flatten
         datePublishedOption match {
             case Some(datePublished) => datePublished
             case None => ""
@@ -59,11 +59,10 @@ object WebScraping {
      * @return a json list
      */
     private def saveJson(links: Set[String], path: String): Unit = {
-        val jsonObjects = links.map(link => Map(
-            "url" -> link,
-            "content" -> extractText(link),
-            "date" -> extractDate(link)
-        )).toList
+        val jsonObjects = links.map(link => Map("url" -> link,
+                                                "content" -> extractText(link),
+                                                "date" -> extractDate(link)
+                                                )).toList
         val out = FileChannel.open(Paths.get(path), StandardOpenOption.APPEND, StandardOpenOption.CREATE)
         val jsonStr = Json.prettyPrint(Json.toJson(jsonObjects))
         out.write(ByteBuffer.wrap(jsonStr.getBytes))
@@ -90,7 +89,17 @@ object WebScraping {
                                         "https://vnexpress.net/tam-su",
                                         "https://vnexpress.net/thu-gian")
         val path = "json/data.json"
-        domains.foreach(domain => saveJson(getUrls(domain), path))
+        var mergedLinks: Set[String] = Set()
+
+        domains.map(domain => {
+            val links = getUrls(domain)
+            mergedLinks = mergedLinks ++ links
+        })
+
+        saveJson(mergedLinks, path)
+        var count: Int = 0
+        mergedLinks.map(link => count += 1)
+        println(count)
     }
 }
 

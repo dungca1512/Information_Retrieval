@@ -12,5 +12,6 @@ lazy val root = project
     libraryDependencies += "org.json4s" %% "json4s-native" % "4.1.0-M4",
     libraryDependencies += "io.spray" %% "spray-json" % "1.3.6",
     libraryDependencies += "org.json4s" %% "json4s-native" % "4.0.7",
-    libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.8.5"
+    libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.8.5",
+    libraryDependencies += "org.apache.spark" %% "spark-core" % "3.5.1"
   )
