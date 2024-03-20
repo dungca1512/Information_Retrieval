@@ -97,9 +97,6 @@ object WebScraping {
         })
 
         saveJson(mergedLinks, path)
-        var count: Int = 0
-        mergedLinks.map(link => count += 1)
-        println(count)
     }
 }
 

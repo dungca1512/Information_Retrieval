@@ -1,49 +1,26 @@
-[0m[[0m[31merror[0m] [0m[0mjava.net.ConnectException: Connection timed out: connect[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.PlainSocketImpl.connect0(Native Method)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.Socket.connect(Socket.java:608)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:302)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:510)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:605)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URL.openStream(URL.java:1165)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.io.Source$.fromURL(Source.scala:145)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.io.Source$.fromURL(Source.scala:135)[0m
-[0m[[0m[31merror[0m] [0m[0m	at WebScraping$.getUrls(WebScraping.scala:50)[0m
-[0m[[0m[31merror[0m] [0m[0m	at WebScraping$.$anonfun$main$1(WebScraping.scala:95)[0m
-[0m[[0m[31merror[0m] [0m[0m	at WebScraping$.$anonfun$main$1$adapted(WebScraping.scala:94)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.HashSet.foreach(HashSet.scala:951)[0m
-[0m[[0m[31merror[0m] [0m[0m	at WebScraping$.main(WebScraping.scala:94)[0m
-[0m[[0m[31merror[0m] [0m[0m	at WebScraping.main(WebScraping.scala)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:566)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:144)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:94)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:121)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Run$.executeSuccess(Run.scala:187)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Run.runWithLoader(Run.scala:121)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1988)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1927)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:367)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:834)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.net.ConnectException: Connection timed out: connect[0m
+[error] org.apache.spark.SparkException: A master URL must be set in your configuration
+[error] 	at org.apache.spark.SparkContext.<init>(SparkContext.scala:414)
+[error] 	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2888)
+[error] 	at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:1099)
+[error] 	at scala.Option.getOrElse(Option.scala:201)
+[error] 	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:1093)
+[error] 	at Vectorization$.main(Vectorization.scala:6)
+[error] 	at Vectorization.main(Vectorization.scala)
+[error] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[error] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[error] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[error] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[error] 	at sbt.Run.invokeMain(Run.scala:144)
+[error] 	at sbt.Run.execute$1(Run.scala:94)
+[error] 	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:121)
+[error] 	at sbt.Run$.executeSuccess(Run.scala:187)
+[error] 	at sbt.Run.runWithLoader(Run.scala:121)
+[error] 	at sbt.Defaults$.$anonfun$bgRunTask$6(Defaults.scala:1988)
+[error] 	at sbt.Defaults$.$anonfun$termWrapper$2(Defaults.scala:1927)
+[error] 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[error] 	at scala.util.Try$.apply(Try.scala:213)
+[error] 	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:367)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:834)
+[error] (Compile / run) org.apache.spark.SparkException: A master URL must be set in your configuration

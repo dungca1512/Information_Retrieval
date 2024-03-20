@@ -1,0 +1,7 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to D:\Information_Retrieval\target\scala-2.13\classes ...
+[info] done compiling
+[success] Total time: 4 s, completed 14:24:17, 20 thg 3, 2024
+[debug] > Exec(idea-shell, None, None)

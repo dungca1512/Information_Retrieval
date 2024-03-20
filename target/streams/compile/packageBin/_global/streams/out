@@ -1,21 +1,21 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging D:\Information_Retrieval\target\scala-2.13\information_retrieval_2.13-0.1.0-SNAPSHOT.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BooleanSearch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\BooleanSearch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BooleanSearch.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\BooleanSearch.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\GUI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IndexSearch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\IndexSearch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IndexSearch.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\IndexSearch.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Test$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\Test$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Test.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\Test.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	WebScraping$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\WebScraping$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	WebScraping.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Information_Retrieval\target\scala-2.13\classes\WebScraping.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
+[debug] Packaging D:\Information_Retrieval\target\scala-2.13\information_retrieval_2.13-0.1.0-SNAPSHOT.jar ...
+[debug] Input file mappings:
+[debug] 	BooleanSearch$.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\BooleanSearch$.class
+[debug] 	BooleanSearch.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\BooleanSearch.class
+[debug] 	GUI.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\GUI.class
+[debug] 	IndexSearch$.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\IndexSearch$.class
+[debug] 	IndexSearch.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\IndexSearch.class
+[debug] 	Vectorization$.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\Vectorization$.class
+[debug] 	Vectorization.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\Vectorization.class
+[debug] 	WebScraping$.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\WebScraping$.class
+[debug] 	WebScraping.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\WebScraping.class
+[debug] Done packaging.
