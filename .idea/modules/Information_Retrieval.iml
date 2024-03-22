@@ -146,12 +146,12 @@
     <orderEntry type="library" name="sbt: org.glassfish.jersey.inject:jersey-hk2:2.40:jar" level="project" />
     <orderEntry type="library" name="sbt: org.javassist:javassist:3.29.2-GA:jar" level="project" />
     <orderEntry type="library" name="sbt: org.jetbrains:annotations:17.0.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.json4s:json4s-ast_2.13:4.1.0-M4:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.json4s:json4s-core_2.13:4.1.0-M4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-ast_2.13:4.0.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-core_2.13:4.0.7:jar" level="project" />
     <orderEntry type="library" name="sbt: org.json4s:json4s-jackson_2.13:3.7.0-M11:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.json4s:json4s-native-core_2.13:4.1.0-M4:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.json4s:json4s-native_2.13:4.1.0-M4:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.json4s:json4s-scalap_2.13:4.1.0-M4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-native-core_2.13:4.0.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-native_2.13:4.0.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.json4s:json4s-scalap_2.13:4.0.7:jar" level="project" />
     <orderEntry type="library" name="sbt: org.jsoup:jsoup:1.17.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.lz4:lz4-java:1.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.objenesis:objenesis:2.5.1:jar" level="project" />
