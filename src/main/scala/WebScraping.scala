@@ -47,7 +47,7 @@ object WebScraping {
      * @return a set of URL
      */
     private def getUrls(domain: String): Set[String] = {
-        val urlSource = Source.fromURL(domain)
+        val urlSource = Source.fromURL(domain, "UTF-8")
         val response = urlSource.mkString
         val regex = """https://vnexpress\.net/[\w-]+\d+\.html""".r
         regex.findAllIn(response).toSet
@@ -89,11 +89,11 @@ object WebScraping {
                                         "https://vnexpress.net/tam-su",
                                         "https://vnexpress.net/thu-gian")
         val path = "json/data.json"
-        var mergedLinks: Set[String] = Set()
+        val mergedLinks: Set[String] = Set()
 
         domains.map(domain => {
             val links = getUrls(domain)
-            mergedLinks = mergedLinks ++ links
+            mergedLinks.union(links)
         })
 
         saveJson(mergedLinks, path)

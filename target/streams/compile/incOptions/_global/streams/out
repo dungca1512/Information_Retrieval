@@ -1,11 +1,2 @@
 [debug] Created transactional ClassFileManager with tempDir = D:\Information_Retrieval\target\scala-2.13\classes.bak
-[debug] About to delete class files:
-[debug] 	Vectorization$.class
-[debug] 	Vectorization.class
-[debug] We backup class files:
-[debug] 	Vectorization$.class
-[debug] 	Vectorization.class
-[debug] Registering generated classes:
-[debug] 	Vectorization.class
-[debug] 	Vectorization$.class
 [debug] Removing the temporary directory used for backing up class files: D:\Information_Retrieval\target\scala-2.13\classes.bak

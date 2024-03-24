@@ -1,0 +1,9 @@
+[debug] > Exec(all {file:/D:/Information_Retrieval/}root/products {file:/D:/Information_Retrieval/}root/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to D:\Information_Retrieval\target\scala-2.13\classes ...
+[info] done compiling
+[success] Total time: 9 s, completed Mar 24, 2024, 12:28:56 PM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
