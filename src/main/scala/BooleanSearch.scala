@@ -2,6 +2,7 @@ import java.util.Scanner
 import scala.io.Source
 
 object BooleanSearch {
+
   var index: Map[String, Set[String]] = Map.empty[String, Set[String]]
 
   /**
@@ -9,13 +10,15 @@ object BooleanSearch {
    *
    * @param indexPath
    */
-  def loadIndex(indexPath: String): Unit = {
+  private def loadIndex(indexPath: String): Unit = {
     // fill-in the index
     val textSource = Source.fromFile(indexPath)
     val lines = textSource.getLines()
     index = lines.map { line =>
-      val tokens = line.split("""[\s]+""")
-      (tokens.head, tokens.tail.toSet)
+      val tokens = line.split("""\t""", 2)
+      val term = tokens(0)
+      val docList = tokens(1).split("""\s+""").toSet
+      (term, docList)
     }.toMap
   }
 
@@ -25,7 +28,7 @@ object BooleanSearch {
    * @param term
    * @return a set of document ids.
    */
-  def search(term: String): Set[String] = {
+  private def search(term: String): Set[String] = {
     index.getOrElse(term, Set.empty[String]).toList.sorted.toSet
   }
 
@@ -74,23 +77,63 @@ object BooleanSearch {
    * @return a set of document ids.
    */
   private def searchQuery(query: String): Set[String] = {
-    val tokens = query.split(" ")
-    val term1 = tokens.head
-    val term2 = tokens.last
-
-    val isAndQuery = tokens(1) == "AND"
-    val isOrQuery = tokens(1) == "OR"
-
-    val result: Set[String] = if (isAndQuery) {
-      searchAnd(term1, term2)
-    } else {
-      searchOr(term1, term2)
+    val tokens = query.split(" ").toList
+    def processQuery(tokens: List[String]): Set[String] = {
+      if (tokens.isEmpty) {
+        Set.empty[String]
+      } else if (tokens.head == "(") {
+        val (innerQuery, remaining) = extractInnerQuery(tokens.tail)
+        val innerResult = processQuery(innerQuery)
+        if (remaining.headOption.contains("NOT")) {
+          searchNot(remaining.tail.mkString(" "))
+        } else {
+          innerResult
+        }
+      } else if (tokens.head == "NOT") {
+        searchNot(tokens.tail.mkString(" "))
+      } else if (tokens.tail.headOption.contains("AND")) {
+        searchAnd(tokens.head, processQuery(tokens.tail.tail).mkString(" "))
+      } else if (tokens.tail.headOption.contains("OR")) {
+        searchOr(tokens.head, processQuery(tokens.tail.tail).mkString(" "))
+      } else {
+        search(tokens.mkString(" "))
+      }
     }
-    result
+  /**
+   * Extract the inner query within parentheses from a list of query tokens.
+   *
+   * This function is used to separate a nested query within parentheses from the main query,
+   * allowing the query to be processed recursively.
+   *
+   * @param tokens A list of query tokens starting from the first token after the opening parenthesis.
+   * @return A tuple containing two lists:
+   *         - The first list is the inner query within parentheses, excluding the opening and closing parentheses.
+   *         - The second list is the remaining part of the main query after the inner query.
+   */
+    def extractInnerQuery(tokens: List[String]): (List[String], List[String]) = {
+      var innerQuery = List.empty[String]
+      var remaining = List.empty[String]
+      var parensCount = 0
+      for (token <- tokens) {
+        if (token == "(") {
+          parensCount += 1
+        } else if (token == ")") {
+          parensCount -= 1
+        }
+        if (parensCount >= 1) {
+          innerQuery = innerQuery :+ token
+        } else {
+          remaining = remaining :+ token
+        }
+      }
+      (innerQuery.tail.init, remaining)
+    }
+    processQuery(tokens)
   }
   def main(args: Array[String]): Unit = {
     // Load to file index.txt
-    val index: Unit = loadIndex("index/index.txt")
+    val index_path = "index/index.txt"
+    val index: Unit = loadIndex(index_path)
 
     // Init Scanner object
     val scanner = new Scanner(System.in)
@@ -103,7 +146,8 @@ object BooleanSearch {
     val term2 = scanner.nextLine()
 
     // Search for documents for keyword "oil"
-    val results = BooleanSearch.search(term1)
+    val results_1 = BooleanSearch.search(term1)
+    val results_2 = BooleanSearch.search(term2)
 
     // Search for documents containing "iraq" and "oil"
     val resultsAnd = BooleanSearch.searchAnd(term1, term2)
@@ -119,7 +163,10 @@ object BooleanSearch {
 
     // Print the results
     println(s"1. query: $term1")
-    println(results)
+    println(results_1)
+
+    println(s"1. query: $term2")
+    println(results_2)
 
     println(s"2. query: $term1 AND $term2")
     println(resultsAnd)

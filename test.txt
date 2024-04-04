@@ -1,2 +1,3 @@
 caspar  21006 20632 20464 18231 12337
 fallout 20632 18231
+brought cumulative	19625
