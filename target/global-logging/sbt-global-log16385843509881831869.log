@@ -1,0 +1,23 @@
+[debug] > Exec(all {file:/D:/Information_Retrieval/}root/products {file:/D:/Information_Retrieval/}root/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Java sources to D:\Information_Retrieval\target\scala-2.13\classes ...
+[error] D:\Information_Retrieval\src\main\java\SearchQueryExecutor.java:13:1: cannot find symbol
+[error]   symbol:   variable MODULE$
+[error]   location: class scala.Predef
+[error] scala.Predef.MODULE$
+[error] D:\Information_Retrieval\src\main\java\SearchQueryExecutor.java:16:1: cannot find symbol
+[error]   symbol:   variable MODULE$
+[error]   location: class scala.Predef
+[error] scala.Predef.MODULE$
+[error] D:\Information_Retrieval\src\main\java\SearchQueryExecutor.java:21:1: for-each not applicable to expression type
+[error]   required: array or java.lang.Iterable
+[error]   found:    scala.collection.Iterable<java.lang.String>
+[error] scalaSet
+[info] D:\Information_Retrieval\src\main\java\SearchQueryExecutor.java: SearchQueryExecutor.java uses unchecked or unsafe operations.
+[info] D:\Information_Retrieval\src\main\java\SearchQueryExecutor.java: Recompile with -Xlint:unchecked for details.
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[error] Total time: 2 s, completed Apr 4, 2024, 6:55:58 PM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

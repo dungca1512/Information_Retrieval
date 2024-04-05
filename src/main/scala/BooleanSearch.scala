@@ -10,7 +10,7 @@ object BooleanSearch {
    *
    * @param indexPath
    */
-  private def loadIndex(indexPath: String): Unit = {
+  def loadIndex(indexPath: String): Map[String, Set[String]] = {
     // fill-in the index
     val textSource = Source.fromFile(indexPath)
     val lines = textSource.getLines()
@@ -20,6 +20,7 @@ object BooleanSearch {
       val docList = tokens(1).split("""\s+""").toSet
       (term, docList)
     }.toMap
+    index
   }
 
   /**
@@ -28,7 +29,7 @@ object BooleanSearch {
    * @param term
    * @return a set of document ids.
    */
-  private def search(term: String): Set[String] = {
+  def search(term: String): Set[String] = {
     index.getOrElse(term, Set.empty[String]).toList.sorted.toSet
   }
 
@@ -39,7 +40,7 @@ object BooleanSearch {
    * @param term2
    * @return a set of document ids.
    */
-  private def searchAnd(term1: String, term2: String): Set[String] = {
+  def searchAnd(term1: String, term2: String): Set[String] = {
     val doc1 = search(term1)
     val doc2 = search(term2)
     doc1.intersect(doc2).toList.sorted.toSet
@@ -52,7 +53,7 @@ object BooleanSearch {
    * @param term2
    * @return a set of document ids.
    */
-  private def searchOr(term1: String, term2: String): Set[String] = {
+  def searchOr(term1: String, term2: String): Set[String] = {
     val doc1 = search(term1)
     val doc2 = search(term2)
     doc1.union(doc2).toList.sorted.toSet
@@ -64,7 +65,7 @@ object BooleanSearch {
    * @param term
    * @return a set of document ids.
    */
-  private def searchNot(term: String): Set[String] = {
+  def searchNot(term: String): Set[String] = {
     val termDocs = search(term)
     val allDocs = index.values.flatten.toSet
     allDocs.diff(termDocs).toList.sorted.toSet
@@ -76,7 +77,7 @@ object BooleanSearch {
    * @param query
    * @return a set of document ids.
    */
-  private def searchQuery(query: String): Set[String] = {
+  def searchQuery(query: String): Set[String] = {
     val tokens = query.split(" ").toList
     def processQuery(tokens: List[String]): Set[String] = {
       if (tokens.isEmpty) {
@@ -133,7 +134,7 @@ object BooleanSearch {
   def main(args: Array[String]): Unit = {
     // Load to file index.txt
     val index_path = "index/index.txt"
-    val index: Unit = loadIndex(index_path)
+    val index: Map[String, Set[String]] = loadIndex(index_path)
 
     // Init Scanner object
     val scanner = new Scanner(System.in)
