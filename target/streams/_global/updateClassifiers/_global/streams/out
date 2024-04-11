@@ -1,4 +1,3 @@
-[warn] json4s-native_2.13-4.0.7-sources.jar no longer exists at C:\Users\admin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\json4s\json4s-native_2.13\4.0.7\json4s-native_2.13-4.0.7-sources.jar
-[debug] not up to date. inChanged = false, force = false
+[debug] not up to date. inChanged = true, force = false
 [debug] Updating ProjectRef(uri("file:/D:/Information_Retrieval/"), "root")...
 [debug] Done updating ProjectRef(uri("file:/D:/Information_Retrieval/"), "root")

@@ -1,0 +1,17 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources and 2 Java sources to D:\Information_Retrieval\target\scala-2.13\classes ...
+[error] D:\Information_Retrieval\src\main\scala\WebScraping.scala:2:8: not found: object play
+[error] import play.api.libs.json._
+[error]        ^
+[error] D:\Information_Retrieval\src\main\scala\WebScraping.scala:67:23: not found: value Json
+[error]         val jsonStr = Json.prettyPrint(Json.toJson(jsonObjects))
+[error]                       ^
+[error] D:\Information_Retrieval\src\main\scala\WebScraping.scala:67:40: not found: value Json
+[error]         val jsonStr = Json.prettyPrint(Json.toJson(jsonObjects))
+[error]                                        ^
+[error] three errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed Apr 11, 2024, 2:51:30 PM
+[debug] > Exec(idea-shell, None, None)

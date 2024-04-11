@@ -1,0 +1,165 @@
+[debug] > Exec(;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers insertProjectTransitiveDependencies" ;preferScala2;*/*:dumpStructureTo C:/Users/admin/AppData/Local/Temp/sbt-structure.xml; session clear-all ; set ideaPort in Global := 53175, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.9 (Oracle Corporation Java 11.0.21)
+[debug] Load.defaultLoad until apply took 7.4379ms
+[debug]                 Load.loadUnit: plugins took 50.4605ms
+[debug]                 Load.loadUnit: defsScala took 0.0165ms
+[debug] [Loading] Scanning directory D:\Information_Retrieval\project\project
+[debug]                   Load.loadUnit: mkEval took 0.9352ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\Information_Retrieval\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 5.3199 ms
+[info] loading settings for project information_retrieval-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(information_retrieval-build-build) took 5.7036ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id information_retrieval-build-build, base: D:\Information_Retrieval\project\project, plugins: List(<none>))) took 11.8699ms
+[debug] [Loading] Done in D:\Information_Retrieval\project\project, returning: (information_retrieval-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 47.9881ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 1.2148ms
+[debug]               Load.loadUnit(file:/D:/Information_Retrieval/project/project/, ...) took 101.3668ms
+[debug]             Load.apply: load took 103.7817ms
+[debug]             Load.apply: resolveProjects took 1.4518ms
+[debug]             Load.apply: finalTransforms took 49.8796ms
+[debug]             Load.apply: config.delegates took 0.327ms
+[debug]             Load.apply: Def.make(settings)... took 88.161ms
+[debug]             Load.apply: structureIndex took 29.0241ms
+[debug]             Load.apply: mkStreams took 0.0045ms
+[info] loading project definition from D:\Information_Retrieval\project\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 584.4365ms
+[debug]           Load.loadUnit: defsScala took 0.0067ms
+[debug] [Loading] Scanning directory D:\Information_Retrieval\project
+[debug]             Load.loadUnit: mkEval took 0.7927ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\Information_Retrieval\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.5327 ms
+[info] loading settings for project information_retrieval-build from metals.sbt,idea1.sbt ...
+[debug]               Load.resolveProject(information_retrieval-build) took 49.1008ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id information_retrieval-build, base: D:\Information_Retrieval\project, plugins: List(<none>))) took 51.3765ms
+[debug] [Loading] Done in D:\Information_Retrieval\project, returning: (information_retrieval-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 118.849ms
+[debug]           Load.loadUnit: cleanEvalClasses took 1.6841ms
+[debug]         Load.loadUnit(file:/D:/Information_Retrieval/project/, ...) took 706.0189ms
+[debug]       Load.apply: load took 708.1506ms
+[debug]       Load.apply: resolveProjects took 0.178ms
+[debug]       Load.apply: finalTransforms took 22.2164ms
+[debug]       Load.apply: config.delegates took 0.4388ms
+[debug]       Load.apply: Def.make(settings)... took 86.0612ms
+[debug]       Load.apply: structureIndex took 28.7896ms
+[debug]       Load.apply: mkStreams took 0.0031ms
+[info] loading project definition from D:\Information_Retrieval\project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Generated .bloop\information_retrieval-build.json
+[success] Total time: 1 s, completed Apr 11, 2024, 3:31:04 PM
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 2545.8529ms
+[debug]     Load.loadUnit: defsScala took 0.005ms
+[debug] [Loading] Scanning directory D:\Information_Retrieval
+[debug]       Load.loadUnit: mkEval took 0.5771ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.1973 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 43.5514ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: D:\Information_Retrieval, plugins: List(<none>))) took 45.161ms
+[debug] [Loading] Done in D:\Information_Retrieval, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 90.7467ms
+[debug]     Load.loadUnit: cleanEvalClasses took 1.7195ms
+[debug]   Load.loadUnit(file:/D:/Information_Retrieval/, ...) took 2638.8968ms
+[debug] Load.apply: load took 2640.4051ms
+[debug] Load.apply: resolveProjects took 0.0717ms
+[debug] Load.apply: finalTransforms took 17.0368ms
+[debug] Load.apply: config.delegates took 0.2745ms
+[debug] Load.apply: Def.make(settings)... took 49.1049ms
+[debug] Load.apply: structureIndex took 15.4313ms
+[debug] Load.apply: mkStreams took 0.0027ms
+[warn] Discarding 1 session setting.  Use 'session save' to persist session settings.
+[info] set current project to Information_Retrieval (in build file:/D:/Information_Retrieval/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers insertProjectTransitiveDependencies", None, None)
+[info] Defining Global / sbtStructureOptions
+[info] The new value will be used by Global / ssOptions
+[debug] Defining 
+[debug] 	Global / sbtStructureOptions
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Global / ssOptions
+[info] Reapplying settings...
+[info] set current project to Information_Retrieval (in build file:/D:/Information_Retrieval/)
+[debug] > Exec(preferScala2, None, None)
+[debug] > Exec(*/*:dumpStructureTo C:/Users/admin/AppData/Local/Temp/sbt-structure.xml, None, None)
+[debug] Evaluating tasks: Global / dumpStructureTo
+[warn] sbt 0.13 shell syntax is deprecated; use slash syntax instead: Global / dumpStructureTo
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] Writing structure to C:\Users\admin\AppData\Local\Temp\sbt-structure.xml...
+[info] Done.
+[success] Total time: 7 s, completed Apr 11, 2024, 3:31:12 PM
+[debug] > Exec(session clear-all, None, None)
+[info] Reapplying settings...
+[info] set current project to Information_Retrieval (in build file:/D:/Information_Retrieval/)
+[debug] > Exec(set ideaPort in Global := 53175, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to Information_Retrieval (in build file:/D:/Information_Retrieval/)
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

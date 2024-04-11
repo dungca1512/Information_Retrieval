@@ -4,6 +4,8 @@
 [debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\BooleanSearch$.class
 [debug] 	BooleanSearch.class
 [debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\BooleanSearch.class
+[debug] 	GUI$1.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\GUI$1.class
 [debug] 	GUI.class
 [debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\GUI.class
 [debug] 	IndexSearch$.class
@@ -14,6 +16,10 @@
 [debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\Test$.class
 [debug] 	Test.class
 [debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\Test.class
+[debug] 	TestJava.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\TestJava.class
+[debug] 	Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class
+[debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class
 [debug] 	Vectorization$.class
 [debug] 	  D:\Information_Retrieval\target\scala-2.13\classes\Vectorization$.class
 [debug] 	Vectorization.class
