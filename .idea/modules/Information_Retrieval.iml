@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="root [file:/D:/Information_Retrieval/]" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="root [file:/home/dungca/Desktop/Information_Retrieval/]" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://$MODULE_DIR$/../../target/scala-2.13/classes" />
     <output-test url="file://$MODULE_DIR$/../../target/scala-2.13/test-classes" />
@@ -13,6 +13,20 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: scala-sdk-2.13.13" level="project" />
+    <orderEntry type="module-library">
+      <library name="sbt: unmanaged-sources-and-docs">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final-sources.jar!/" />
+          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-core/1.9.2/orc-core-1.9.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.9.2/orc-mapreduce-1.9.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-core/1.9.2/orc-core-1.9.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.9.2/orc-mapreduce-1.9.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="sbt: com.apple:AppleJavaExtensions:1.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.clearspring.analytics:stream:2.9.6:jar" level="project" />
     <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.2:jar" level="project" />
@@ -219,17 +233,6 @@
     <orderEntry type="library" name="sbt: org.xerial.snappy:snappy-java:1.1.10.3:jar" level="project" />
     <orderEntry type="library" name="sbt: oro:oro:2.0.8:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: pl.edu.icm:JLargeArrays:1.5:jar" level="project" />
-    <orderEntry type="module-library">
-      <library name="sbt: unmanaged-sources-and-docs">
-        <CLASSES />
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final-sources.jar!/" />
-          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-core/1.9.2/orc-core-1.9.2-sources.jar!/" />
-          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.9.2/orc-mapreduce-1.9.2-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="sbt: xalan:serializer:2.7.3:jar" level="project" />
     <orderEntry type="library" name="sbt: xalan:xalan:2.7.3:jar" level="project" />
     <orderEntry type="library" name="sbt: xerces:xercesImpl:2.12.2:jar" level="project" />

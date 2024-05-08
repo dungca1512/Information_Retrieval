@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Information_Retrieval.iml" filepath="$PROJECT_DIR$/.idea/modules/Information_Retrieval.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Information_Retrieval-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Information_Retrieval-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Information_Retrieval.Information_Retrieval-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Information_Retrieval.Information_Retrieval-build.iml" />
     </modules>
   </component>
 </project>
