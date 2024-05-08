@@ -42,8 +42,8 @@ object Word2Vec {
    * @return vector representing the token
    */
   private def getVector(token: String, data: List[Token]): List[Double] = {
-  data.find(_.token == token).map(_.vector).getOrElse(List.empty)
-}
+    data.find(_.token == token).map(_.vector).getOrElse(List.empty)
+  }
 
   def main(args: Array[String]): Unit = {
 
