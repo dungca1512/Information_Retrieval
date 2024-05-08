@@ -11,15 +11,15 @@ object Word2Vec {
    * @return a set of tokens and vectors of that token
    */
   private def loadVector(path: String): List[Token] = {
-  val source = Source.fromFile(path, "UTF-8")
-  val lines = try source.getLines.toList finally source.close()
-  lines.map(line => {
-    val data = line.split(" ").toList
-    val token = data.head
-    val vector = data.tail.map(_.toDouble)
-    Token(token, vector)
-  })
-}
+    val source = Source.fromFile(path, "UTF-8")
+    val lines = try source.getLines.toList finally source.close()
+    lines.map(line => {
+      val data = line.split(" ").toList
+      val token = data.head
+      val vector = data.tail.map(_.toDouble)
+      Token(token, vector)
+    })
+  }
 
   /**
    * Calculate a Cosine distance between two vectors
