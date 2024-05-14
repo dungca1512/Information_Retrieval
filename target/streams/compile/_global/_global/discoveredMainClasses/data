@@ -1,1 +1,1 @@
-["ir.BooleanSearch","ir.GUI","ir.IndexSearch","ir.Test","ir.TestJava","ir.Vectorization","ir.WebScraping","ir.Word2Vec"]
+["BooleanSearch","GUI","IndexSearch","Test","TestJava","Vectorization","WebScraping","Word2Vec"]

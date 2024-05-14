@@ -10,7 +10,7 @@ object Test {
       .master("local[*]")
       .getOrCreate()
 
-    val path = "json/data.json"
+    val path = "/home/dungca/Desktop/Information_Retrieval/json/data.json"
     val df = spark.read.option("multiline", value = true).json(path)
 
     val regexTokenizer = new RegexTokenizer().setInputCol("content").setOutputCol("tokens").setPattern("""[\s)(,.;-?"]+""")
@@ -23,6 +23,6 @@ object Test {
 
     val ff = model.transform(ef)
 
-    ff.show
+    model.findSynonyms("vay", 10).show()
   }
 }
