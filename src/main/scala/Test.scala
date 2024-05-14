@@ -23,6 +23,6 @@ object Test {
 
     val ff = model.transform(ef)
 
-    model.findSynonyms("vay", 10).show()
+    model.findSynonyms("lãi", 15).show()
   }
 }

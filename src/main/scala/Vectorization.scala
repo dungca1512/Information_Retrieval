@@ -20,7 +20,6 @@ object Vectorization {
   }
 
   def main(args: Array[String]): Unit = {
-    // Khởi tạo SparkSession
     val spark = SparkSession.builder()
       .appName("TF-IDFExample")
       .master("local[*]")
