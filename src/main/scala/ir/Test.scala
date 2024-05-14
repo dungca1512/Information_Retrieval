@@ -25,6 +25,6 @@ object Test {
 
     val ff = model.transform(ef)
 
-    print(ff)
+    ff.show
   }
 }
