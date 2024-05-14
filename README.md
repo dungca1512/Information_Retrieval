@@ -27,8 +27,8 @@ Dự án Information_Retrieval được viết bằng ngôn ngữ lập trình S
 ### 2. Chạy dự án
 
 - Clone mã nguồn dự án từ kho lưu trữ GitHub.
-- Chạy lệnh `sbt assembly` để biên dịch và đóng gói dự án thành JAR.
-- Chạy lệnh `java -jar target/scala-3.2.1/information-retrieval-assembly-0.1.0-SNAPSHOT.jar` để khởi động ứng dụng.
+- Chạy lệnh `sbt package` để biên dịch và đóng gói dự án thành JAR.
+- Chạy lệnh `java -jar target/scala-2.13/information_retrieval_2.13-0.1.0-SNAPSHOT.jar` để khởi động ứng dụng.
 
 ### 3. Sử dụng API
 
