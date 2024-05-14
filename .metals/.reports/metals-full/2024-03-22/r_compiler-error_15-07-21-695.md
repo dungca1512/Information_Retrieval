@@ -1,4 +1,4 @@
-file:///D:/Information_Retrieval/src/main/java/GUI.java
+file:///D:/Information_Retrieval/src/main/java/ir.GUI.java
 ### java.util.NoSuchElementException: next on empty iterator
 
 occurred in the presentation compiler.
@@ -12,7 +12,7 @@ Options:
 
 
 action parameters:
-uri: file:///D:/Information_Retrieval/src/main/java/GUI.java
+uri: file:///D:/Information_Retrieval/src/main/java/ir.GUI.java
 text:
 ```scala
 import java.awt.BorderLayout;
@@ -23,7 +23,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-public class GUI {
+public class ir.GUI {
     public static void main(String[] args) {
         JFrame window = new JFrame("My super cool search app");
         window.setSize(400, 500);

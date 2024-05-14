@@ -427,7 +427,7 @@ WARNING: Unmatched cancel notification for request id 10
 2024.03.06 13:56:32 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
 2024.03.06 13:56:32 INFO  time: indexed workspace in 1.26s
 2024.03.06 13:56:32 WARN  no build target for: /home/dungca/Desktop/Information-Retrieval/src/main/scala/IndexSearch.scala
-2024.03.06 13:56:32 WARN  no build target for: /home/dungca/Desktop/Information-Retrieval/src/main/java/GUI.java
+2024.03.06 13:56:32 WARN  no build target for: /home/dungca/Desktop/Information-Retrieval/src/main/java/ir.GUI.java
 2024.03.06 13:56:34 INFO  time: code lens generation in 1.21s
 Mar 06, 2024 1:56:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 89
@@ -1744,7 +1744,7 @@ thg 3 16, 2024 5:37:38 CH org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancell
 WARNING: Unmatched cancel notification for request id 15
 thg 3 16, 2024 5:37:38 CH org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 17
-2024.03.16 17:37:45 INFO  no build target found for D:\Information_Retrieval\src\main\java\GUI.java. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.16 17:37:45 INFO  no build target found for D:\Information_Retrieval\src\main\java\ir.GUI.java. Using presentation compiler with project's scala-library version: 3.3.1
 2024.03.16 17:37:51 INFO  compiling root (5 scala sources and 1 java source)
 2024.03.16 17:37:51 INFO  time: indexed workspace in 6.05s
 thg 3 16, 2024 5:37:59 CH org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
@@ -3456,7 +3456,7 @@ WARNING: Unmatched cancel notification for request id 7
 2024.03.22 15:07:06 INFO  time: Connected to build server in 26s
 2024.03.22 15:07:06 INFO  Connected to Build server: Bloop v1.5.15
 2024.03.22 15:07:09 INFO  time: Imported build in 1.71s
-2024.03.22 15:07:09 INFO  no build target found for D:\Information_Retrieval\src\main\java\GUI.java. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.22 15:07:09 INFO  no build target found for D:\Information_Retrieval\src\main\java\ir.GUI.java. Using presentation compiler with project's scala-library version: 3.3.1
 Mar 22, 2024 3:07:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 5
 Mar 22, 2024 3:07:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation

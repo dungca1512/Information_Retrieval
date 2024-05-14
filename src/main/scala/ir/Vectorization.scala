@@ -1,3 +1,5 @@
+package ir
+
 import org.apache.spark.ml.feature.{HashingTF, IDF, Tokenizer}
 import org.apache.spark.ml.linalg.SparseVector
 import org.apache.spark.sql.types._

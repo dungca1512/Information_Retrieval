@@ -1,6 +1,7 @@
-import scala.io.Source
+package ir
+
+import scala.io.{Source, StdIn}
 import scala.math.sqrt
-import scala.io.StdIn
 
 object Word2Vec {
 

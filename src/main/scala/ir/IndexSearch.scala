@@ -1,8 +1,9 @@
-import scala.io.Source
-import java.nio.file.{Files, Paths}
+package ir
+
+import java.nio.file.{Files, Paths, StandardOpenOption}
 import java.util.stream.Collectors
+import scala.io.Source
 import scala.jdk.CollectionConverters._
-import java.nio.file.StandardOpenOption
 
 object IndexSearch {
 

@@ -1,3 +1,5 @@
+package ir
+
 import java.util.Scanner
 import scala.io.Source
 
@@ -40,7 +42,7 @@ object BooleanSearch {
    * @param term2
    * @return a set of document ids.
    */
-  def searchAnd(term1: String, term2: String): Set[String] = {
+  private def searchAnd(term1: String, term2: String): Set[String] = {
     val doc1 = search(term1)
     val doc2 = search(term2)
     doc1.intersect(doc2).toList.sorted.toSet
@@ -53,7 +55,7 @@ object BooleanSearch {
    * @param term2
    * @return a set of document ids.
    */
-  def searchOr(term1: String, term2: String): Set[String] = {
+  private def searchOr(term1: String, term2: String): Set[String] = {
     val doc1 = search(term1)
     val doc2 = search(term2)
     doc1.union(doc2).toList.sorted.toSet
@@ -65,7 +67,7 @@ object BooleanSearch {
    * @param term
    * @return a set of document ids.
    */
-  def searchNot(term: String): Set[String] = {
+  private def searchNot(term: String): Set[String] = {
     val termDocs = search(term)
     val allDocs = index.values.flatten.toSet
     allDocs.diff(termDocs).toList.sorted.toSet

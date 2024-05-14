@@ -1,3 +1,5 @@
+package ir
+
 import org.jsoup.Jsoup
 import play.api.libs.json._
 
