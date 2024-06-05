@@ -1,6 +1,6 @@
-[debug] [zinc] IncrementalCompile -----------
-[debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 18 products, 8 sources, 8 libraries
-[debug] current source = Set(${BASE}/src/main/scala/WebScraping.scala, ${BASE}/src/main/scala/BooleanSearch.scala, ${BASE}/src/main/java/TestJava.java, ${BASE}/src/main/scala/Word2Vec.scala, ${BASE}/src/main/scala/Test.scala, ${BASE}/src/main/scala/Vectorization.scala, ${BASE}/src/main/java/GUI.java, ${BASE}/src/main/scala/IndexSearch.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
-[debug] No changes
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 18 products, 8 sources, 8 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/WebScraping.scala, ${BASE}/src/main/scala/BooleanSearch.scala, ${BASE}/src/main/java/TestJava.java, ${BASE}/src/main/scala/Word2Vec.scala, ${BASE}/src/main/scala/Test.scala, ${BASE}/src/main/scala/Vectorization.scala, ${BASE}/src/main/java/GUI.java, ${BASE}/src/main/scala/IndexSearch.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

@@ -1,39 +1,39 @@
-[debug] Packaging E:\IdeaProjects\Information_Retrieval\target\scala-2.13\information_retrieval_2.13-0.1.0-SNAPSHOT.jar ...
-[debug] Input file mappings:
-[debug] 	BooleanSearch$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\BooleanSearch$.class
-[debug] 	BooleanSearch.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\BooleanSearch.class
-[debug] 	GUI$1.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\GUI$1.class
-[debug] 	GUI.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\GUI.class
-[debug] 	IndexSearch$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\IndexSearch$.class
-[debug] 	IndexSearch.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\IndexSearch.class
-[debug] 	Test$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Test$.class
-[debug] 	Test.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Test.class
-[debug] 	TestJava.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\TestJava.class
-[debug] 	Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class
-[debug] 	Vectorization$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Vectorization$.class
-[debug] 	Vectorization.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Vectorization.class
-[debug] 	WebScraping$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\WebScraping$.class
-[debug] 	WebScraping.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\WebScraping.class
-[debug] 	Word2Vec$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Word2Vec$.class
-[debug] 	Word2Vec$Token$.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Word2Vec$Token$.class
-[debug] 	Word2Vec$Token.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Word2Vec$Token.class
-[debug] 	Word2Vec.class
-[debug] 	  E:\IdeaProjects\Information_Retrieval\target\scala-2.13\classes\Word2Vec.class
-[debug] Done packaging.
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/information_retrieval_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Vectorization.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Vectorization.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IndexSearch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/IndexSearch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Vectorization$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Vectorization$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WebScraping$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/WebScraping$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BooleanSearch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/BooleanSearch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BooleanSearch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/BooleanSearch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IndexSearch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/IndexSearch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Test.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Word2Vec$Token.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec$Token.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/GUI$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Word2Vec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TestJava.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/TestJava.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WebScraping.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/WebScraping.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Word2Vec$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Word2Vec$Token$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec$Token$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Test$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

@@ -19,15 +19,7 @@ object Test {
   }
 
   def main(args: Array[String]): Unit = {
-    print("Enter OS: ")
-    val os = StdIn.readLine()
-    var path = ""
-    if (os == "windows") {
-      path = "E:/IdeaProjects/Information_Retrieval/json/data.json"
-    }
-    else {
-      path = "/home/dungca/IdeaProjects/Information_Retrieval/json/data.json"
-    }
+    val path = "/home/dungca/Desktop/Information_Retrieval/json/data.json"
     print("Enter token: ")
     val token = StdIn.readLine()
     print("Enter num: ")
