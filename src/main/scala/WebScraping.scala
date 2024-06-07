@@ -6,6 +6,7 @@ import java.nio.channels.FileChannel
 import java.nio.file.{Paths, StandardOpenOption}
 import scala.io.Source
 object WebScraping {
+
     /**
      * extract text from URL of a article
      * @param url
@@ -15,6 +16,7 @@ object WebScraping {
         val doc = Jsoup.connect(url).get()
         doc.select("p").text()
     }
+
     /**
      * extract date from URL of a article
      * @param url
@@ -41,6 +43,7 @@ object WebScraping {
             case None => ""
         }
     }
+
     /**
      * get a set of URL from a domain
      * @param domain
@@ -52,6 +55,7 @@ object WebScraping {
         val regex = """https://vnexpress\.net/[\w-]+\d+\.html""".r
         regex.findAllIn(response).toSet
     }
+
     /**
      * save a JSON object to json list
      * @param links
@@ -68,6 +72,7 @@ object WebScraping {
         out.write(ByteBuffer.wrap(jsonStr.getBytes))
         out.close()
     }
+
     def main(args: Array[String]): Unit = {
         val domains: Set[String] = Set("https://vnexpress.net/thoi-su",
                                         "https://vnexpress.net/goc-nhin",
@@ -90,12 +95,10 @@ object WebScraping {
                                         "https://vnexpress.net/thu-gian")
         val path = "json/data.json"
         val mergedLinks: Set[String] = Set()
-
         domains.map(domain => {
             val links = getUrls(domain)
             mergedLinks.union(links)
         })
-
         saveJson(mergedLinks, path)
     }
 }
