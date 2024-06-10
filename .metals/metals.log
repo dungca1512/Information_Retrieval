@@ -5164,3 +5164,19 @@ java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnect
 2024.06.10 09:03:23 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/scala/WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.3
 2024.06.10 09:05:33 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/scala/WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.3
 2024.06.10 09:05:37 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/scala/WebScraping.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.10 09:33:33 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/java/TestJava.java. Using presentation compiler with project's scala-library version: 3.3.3
+Jun 10, 2024 9:33:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/dungca/Desktop/Information_Retrieval/.metals/.reports/metals-full/2024-06-10/r_compiler-error_09-33-33-820.md
+Jun 10, 2024 9:33:35 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.06.10 09:33:40 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/java/TestJava.java. Using presentation compiler with project's scala-library version: 3.3.3
+Jun 10, 2024 9:33:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/dungca/Desktop/Information_Retrieval/.metals/.reports/metals-full/2024-06-10/r_compiler-error_09-33-40-420.md
+Jun 10, 2024 9:33:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43
+2024.06.10 09:33:42 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/java/TestJava.java. Using presentation compiler with project's scala-library version: 3.3.3
+Jun 10, 2024 9:33:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/dungca/Desktop/Information_Retrieval/.metals/.reports/metals-full/2024-06-10/r_compiler-error_09-33-42-501.md
+2024.06.10 09:33:44 INFO  no build target found for /home/dungca/Desktop/Information_Retrieval/src/main/java/TestJava.java. Using presentation compiler with project's scala-library version: 3.3.3
+Jun 10, 2024 9:33:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/dungca/Desktop/Information_Retrieval/.metals/.reports/metals-full/2024-06-10/r_compiler-error_09-33-44-210.md
