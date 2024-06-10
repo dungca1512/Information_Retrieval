@@ -52,8 +52,8 @@ object WebScraping {
     private def getUrls(domain: String): Set[String] = {
         val urlSource = Source.fromURL(domain, "UTF-8")
         val response = urlSource.mkString
-        val regex = """https://vnexpress\.net/[\w-]+\d+\.html""".r
-        regex.findAllIn(response).toSet
+        val pattern = """https://vnexpress\.net/[\w-]+\d+\.html""".r
+        pattern.findAllIn(response).toSet
     }
 
     /**
