@@ -14,16 +14,12 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/BooleanSearch.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	IndexSearch$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/IndexSearch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Test.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Test.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Word2Vec$Token.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec$Token.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GUI$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/GUI$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/GUI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Vectorization$$anonfun$$nestedInanonfun$cosineSimilarity$1$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Word2Vec.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	TestJava.class[0m
@@ -34,6 +30,4 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Word2Vec$Token$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Word2Vec$Token$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Test$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dungca/Desktop/Information_Retrieval/target/scala-2.13/classes/Test$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
