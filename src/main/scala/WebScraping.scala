@@ -102,4 +102,3 @@ object WebScraping {
         saveJson(mergedLinks, path)
     }
 }
-
