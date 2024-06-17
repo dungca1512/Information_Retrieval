@@ -5,12 +5,12 @@ import scala.jdk.CollectionConverters._
 
 object IndexSearch {
 
-  private def tokenize(path: String) = {
+  private def tokenize(path: String): (Set[String], Set[String]) = {
     val textSource = Source.fromFile(path, "ISO-8859-1")
     val lines = textSource.getLines().toList
     val tokens = lines.flatMap(line => line.toLowerCase().split("""[\s,.)(<>':";?-]+""")
         .map(_.trim))
-      .distinct.toList
+      .distinct
     val unigrams = tokens.toSet
     val bigrams = createBigrams(tokens)
     (unigrams, bigrams.toSet)
@@ -36,7 +36,7 @@ object IndexSearch {
     val bigramVocab = docIdx.flatMap(kv => kv._2._2).toSet
     val allTerms = vocab ++ bigramVocab
 
-    val index = allTerms.map { term =>
+    val index = allTerms.map {term =>
       (
         term,
         docs.map(id => if (docIdx(id)._1.contains(term) || docIdx(id)._2.contains(term)) id else "").filter(_.nonEmpty)
@@ -44,7 +44,7 @@ object IndexSearch {
     }.toMap
 
     // Step 6: save the index to index.txt (Java)
-    val output = index.map { case (term, docs) =>
+    val output = index.map {case (term, docs) =>
       term + "\t" + docs.mkString(" ")
     }.toList
     Files.write(Paths.get("index/index.txt"), output.asJava, StandardOpenOption.CREATE_NEW)

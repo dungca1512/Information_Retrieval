@@ -19,4 +19,3 @@ lazy val root = project
       libraryDependencies += "org.apache.spark" %% "spark-graphx" % "3.5.1",
       libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "4.5.7"
   )
-
